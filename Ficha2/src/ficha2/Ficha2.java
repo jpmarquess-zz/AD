@@ -30,7 +30,11 @@ public class Ficha2 {
         /*int sumOfDivisorsOf = ficha2.NumericalUtilities.numberOfDivisorsOf(10);
         System.out.println(sumOfDivisorsOf);*/
         
-        boolean isPrime = ficha2.NumericalUtilities.isPrime(2);
-        System.out.println(isPrime);
+        /*boolean isPrime = ficha2.NumericalUtilities.isPrime(2);
+        System.out.println(isPrime);*/
+        
+        int[] arrayDuplicate = {10,22,30,42,11};
+        boolean teste = ficha2.NumericalUtilities.containsDuplicates(arrayDuplicate);
+        System.out.println(teste);
     }
 }

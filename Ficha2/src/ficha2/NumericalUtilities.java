@@ -73,13 +73,24 @@ public class NumericalUtilities {
     /* 2 f. incompleto */
     public static boolean isPrime(int n) {
         boolean prime = false;
-        
+
         for (int i = 1; i <= n; i++) {
             if (n % i == 0) {
                 prime = true;
             }
         }
-        
+
         return prime;
+    }
+
+    public static boolean containsDuplicates(int[] arrayDuplicate) {
+        for (int i = 0; i < arrayDuplicate.length; i++) {
+            for (int j = i + 1; j < arrayDuplicate.length; j++) {
+                if (arrayDuplicate[i] == arrayDuplicate[j]) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
